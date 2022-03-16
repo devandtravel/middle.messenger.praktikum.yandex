@@ -6,7 +6,7 @@
   "source": "index.hbs",
   "type": "module",
   "scripts": {
-    "start": "parcel",
+    "start": "parcel dist/index.html",
     "build": "parcel build",
     "dev": "parcel index.hbs",
     "test": "echo \"Error: no test specified\" && exit 1"
