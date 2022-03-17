@@ -6,8 +6,8 @@
   "source": "index.hbs",
   "type": "module",
   "scripts": {
-    "start": "parcel dist/index.html",
-    "build": "parcel build",
+    "start": "express",
+    "build": "parcel build index.hbs",
     "dev": "parcel index.hbs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -31,5 +31,8 @@
     "@anikin/parcel-transformer-handlebars": "^1.0.9",
     "express": "^4.17.3",
     "parcel": "^2.3.2"
+  },
+  "dependencies": {
+    "handlebars": "^4.7.7"
   }
 }
