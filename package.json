@@ -2,13 +2,12 @@
   "name": "middle.messenger.praktikum.yandex",
   "version": "1.0.0",
   "description": "communication app",
-  "main": "src/index.js",
   "source": "index.hbs",
-  "type": "module",
   "scripts": {
-    "start": "express",
-    "build": "parcel build index.hbs",
-    "dev": "parcel index.hbs",
+    "start": "node ./server.js",
+    "build": "parcel build ./src/pages/index.hbs --no-cache --public-url ./dist",
+    "dev": "parcel ./src/pages/index.hbs --no-cache",
+    "serve": "serve -s dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
