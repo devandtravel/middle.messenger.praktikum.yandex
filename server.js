@@ -1,9 +1,14 @@
-import express from 'express'
-import path, { dirname } from 'path'
-import { fileURLToPath } from 'url'
+const express = require('express')
+const path = require('path')
+// const { dirname } = require('path')
+// const { fileURLToPath } = require('url')
 
-const __filename = fileURLToPath(import.meta.url)
-const __dirname = dirname(__filename)
+// import express from 'express'
+// import path, { dirname } from 'path'
+// import { fileURLToPath } from 'url'
+
+// const __filename = fileURLToPath(import.meta.url)
+// const __dirname = dirname(__filename)
 
 const app = express()
 const PORT = 3000

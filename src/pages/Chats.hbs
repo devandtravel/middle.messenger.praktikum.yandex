@@ -1,53 +1,85 @@
-<a href="">Profile ></a>
+<a href="">
+  Profile >
+</a>
 <aside>
   <form>
     <input type="search" name="search" placeholder="Поиск" />
   </form>
   <div class="chat-peview">
     <hr />
-    <div class="chat-logo"><img src="" alt="Chat logo" /></div>
+    <div class="chat-logo">
+      {{! <img src="" alt="Chat logo" /> }}
+    </div>
     <div>
       <div>
-        <h3 class="chat-title">{{chat.title}}</h3>
-        <span class="date">{{date}}</span>
+        <h3 class="chat-title">
+          {{chat.title}}
+        </h3>
+        <span class="date">
+          {{date}}
+        </span>
       </div>
       <div>
-        <span>You:</span>
-        <p class="chat-peview-text">{{chat.previewText}}</p>
-        <p class="chat-message-counter">{{chat.messageCounter}}</p>
+        <span>
+          You:
+        </span>
+        <p class="chat-peview-text">
+          {{chat.previewText}}
+        </p>
+        <p class="chat-message-counter">
+          {{chat.messageCounter}}
+        </p>
       </div>
     </div>
   </div>
 </aside>
 <main>
   <div class="chats-placeholder">
-    <p>Select a chat to send a message</p>
+    <p>
+      Select a chat to send a message
+    </p>
   </div>
   <header>
-    <div class="user-avatar"><img src="" alt="User avatar" /></div>
-    <h3>{{user.name}}</h3>
-    <button class="chat-menu-button">::</button>
+    <div class="user-avatar">
+      {{! <img src="" alt="User avatar" /> }}
+    </div>
+    <h3>
+      {{user.name}}
+    </h3>
+    <button class="chat-menu-button">
+      ::
+    </button>
   </header>
   <article class="chat-content">
-    <p class="feed-date">{{feed.date}}</p>
+    <p class="feed-date">
+      {{feed.date}}
+    </p>
     <div class="message">
       <div class="message-text"></div>
-      <div class="message-text-date">{{message.date}}</div>
+      <div class="message-text-date">
+        {{message.date}}
+      </div>
       <div class="message-media">
-        <img src="" alt="Message media" />
+        {{! <img src="" alt="Message media" /> }}
       </div>
     </div>
     <div class="message my">
       <div class="message-text"></div>
-      <div class="message-text-date">{{message.date}}</div>
-      <div class="message-media">
-        <img src="" alt="Message media" />
+      <div class="message-text-date">
+        {{message.date}}
       </div>
-      <div class="message-status">{{message.status}}</div>
+      <div class="message-media">
+        {{! <img src="" alt="Message media" /> }}
+      </div>
+      <div class="message-status">
+        {{message.status}}
+      </div>
     </div>
   </article>
   <form action="">
-    <button class="append-media">Append media</button>
+    <button class="append-media">
+      Append media
+    </button>
     <input type="text" name="message" placeholder="Message" />
     <input type="submit" value="Send" />
   </form>
