@@ -1,3 +1,6 @@
+---
+message: message
+---
 <a href="">
   Profile >
 </a>
@@ -8,15 +11,15 @@
   <div class="chat-peview">
     <hr />
     <div class="chat-logo">
-      {{! <img src="" alt="Chat logo" /> }}
+      img src="" alt="Chat logo"
     </div>
     <div>
       <div>
         <h3 class="chat-title">
-          {{chat.title}}
+          chat.title
         </h3>
         <span class="date">
-          {{date}}
+          date
         </span>
       </div>
       <div>
@@ -24,10 +27,10 @@
           You:
         </span>
         <p class="chat-peview-text">
-          {{chat.previewText}}
+          chat.previewText
         </p>
         <p class="chat-message-counter">
-          {{chat.messageCounter}}
+          chat.messageCounter
         </p>
       </div>
     </div>
@@ -41,10 +44,10 @@
   </div>
   <header>
     <div class="user-avatar">
-      {{! <img src="" alt="User avatar" /> }}
+      img src="" alt="User avatar"
     </div>
     <h3>
-      {{user.name}}
+      user.name
     </h3>
     <button class="chat-menu-button">
       ::
@@ -52,27 +55,27 @@
   </header>
   <article class="chat-content">
     <p class="feed-date">
-      {{feed.date}}
+      feed.date
     </p>
     <div class="message">
       <div class="message-text"></div>
       <div class="message-text-date">
-        {{message.date}}
+        message.date
       </div>
       <div class="message-media">
-        {{! <img src="" alt="Message media" /> }}
+        img src="" alt="Message media"
       </div>
     </div>
     <div class="message my">
       <div class="message-text"></div>
       <div class="message-text-date">
-        {{message.date}}
+        message.date
       </div>
       <div class="message-media">
-        {{! <img src="" alt="Message media" /> }}
+        img src="" alt="Message media"
       </div>
       <div class="message-status">
-        {{message.status}}
+        message.status
       </div>
     </div>
   </article>
@@ -80,7 +83,7 @@
     <button class="append-media">
       Append media
     </button>
-    <input type="text" name="message" placeholder="Message" />
+    <input type="text" name={{message}} placeholder="Message" />
     <input type="submit" value="Send" />
   </form>
 </main>
