@@ -5,8 +5,8 @@
   "source": "index.hbs",
   "scripts": {
     "start": "node ./server.js",
-    "build": "parcel build ./src/pages/*.hbs --no-cache --public-url ./",
-    "dev": "parcel ./src/pages/*.hbs --no-cache"
+    "build": "parcel build ./src/pages/*.hbs --dist-dir=build --no-cache --public-url ./",
+    "dev": "parcel ./src/pages/*.hbs --no-cache --open"
   },
   "repository": {
     "type": "git",
