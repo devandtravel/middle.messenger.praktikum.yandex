@@ -1,0 +1,23 @@
+---
+nameInputs:
+  - name: first_name
+    label: First name
+  - name: second_name
+    label: Second name
+  - name: display_name
+    label: Display name
+buttonTexts:
+  - text: Save
+  - text: Cancel
+stylesheet:
+  - ../styles/profile.css
+---
+{{!< base}}
+<form>
+  {{> avatar}}
+  {{> emailInput}}
+  {{> loginInput}}
+  {{> nameInputs}}
+  {{> phoneInput}}
+  {{> formButtons}}
+</form>

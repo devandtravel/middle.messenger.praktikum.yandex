@@ -6,6 +6,8 @@ nameInputs:
     label: Second name
   - name: display_name
     label: Display name
+buttonTexts:
+  - text: Sign out
 stylesheet:
   - ../styles/profile.css
 ---
@@ -25,13 +27,5 @@ stylesheet:
   <a href="./changePassword.hbs">
     Change password
   </a>
-  <button>
-    Sign out
-  </button>
-  <button>
-    Save
-  </button>
-  <button>
-    Cancel
-  </button>
+  {{> formButtons}}
 </form>

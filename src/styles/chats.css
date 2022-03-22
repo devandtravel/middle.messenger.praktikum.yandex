@@ -1,2 +1,70 @@
 @import './base.css';
+@import './components/avatar.css';
 
+/* Черновик, прошу не проверять */
+
+.message-media {
+  width: 100px;
+  height: 100px;
+  border: 1px solid;
+}
+
+.avatar {
+  height: 3rem;
+  width: 3rem;
+}
+
+.chat-menu-button {
+  justify-content: flex-end;
+}
+
+body > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+body {
+  display: flex;
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media all and (min-width: 600px) {
+  aside {
+    flex: 1 auto;
+  }
+}
+
+@media all and (min-width: 800px) {
+  main {
+    flex: 3 0px;
+  }
+  aside {
+    order: 1;
+  }
+  main {
+    order: 2;
+  }
+  footer {
+    order: 4;
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+}

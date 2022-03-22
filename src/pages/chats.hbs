@@ -4,19 +4,15 @@ stylesheet:
   - ../styles/chats.css
 ---
 {{!< base}}
-<a href="./profile.hbs">
-  Profile >
-</a>
 <aside>
-  <form>
-    <input type="search" name="search" placeholder="Поиск" />
-  </form>
+  <input type="search" name="search" placeholder="Поиск" />
+  <a href="./profile.hbs">
+    Profile >
+  </a>
   <div class="chat-peview">
     <hr />
-    <div class="chat-logo">
-      img src="" alt="Chat logo"
-    </div>
     <div>
+      {{> avatar}}
       <div>
         <h3 class="chat-title">
           chat.title
@@ -40,17 +36,10 @@ stylesheet:
   </div>
 </aside>
 <main>
-  <div class="chats-placeholder">
-    <p>
-      Select a chat to send a message
-    </p>
-  </div>
   <header>
-    <div class="user-avatar">
-      img src="" alt="User avatar"
-    </div>
+    {{> avatar}}
     <h3>
-      user.name
+      User
     </h3>
     <button class="chat-menu-button">
       ::
@@ -58,35 +47,35 @@ stylesheet:
   </header>
   <article class="chat-content">
     <p class="feed-date">
-      feed.date
+      22.03.2022
     </p>
     <div class="message">
-      <div class="message-text"></div>
-      <div class="message-text-date">
-        message.date
-      </div>
+      <p class="message-text"></p>
+      <p class="message-text-date">
+        11:00
+      </p>
       <div class="message-media">
-        img src="" alt="Message media"
+        Message media
       </div>
     </div>
     <div class="message my">
       <div class="message-text"></div>
       <div class="message-text-date">
-        message.date
+        11:11
       </div>
-      <div class="message-media">
-        img src="" alt="Message media"
+      <div class="message-media my">
+        My message media
       </div>
       <div class="message-status">
-        message.status
+        ✓
       </div>
     </div>
   </article>
-  <form action="">
-    <button class="append-media">
-      Append media
-    </button>
-    <input type="text" name={{message}} placeholder="Message" />
-    <input type="submit" value="Send" />
-  </form>
+  <footer>
+      <button class="append-media">
+        Append media
+      </button>
+      <input type="text" name={{message}} placeholder="Message" />
+      <input type="submit" value="Send" />
+  </footer>
 </main>
