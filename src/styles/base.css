@@ -1,19 +1,41 @@
 @import './components/formButton.css';
 @import './components/formInput.css';
 @import './components/formLabel.css';
+@import './components/navLinks.css';
+
+html {
+  font-size: 62.5%;
+  color: #1e1e1e;
+  font-family: 'Mukta', sans-serif;
+}
 
 body {
-  font-family: 'Mukta', sans-serif;
-  color: #1E1E1E;
-  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin: 0;
+  height: 100vh;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  gap: 10px 20px;
+  width: 34rem;
+  gap: 1rem 2rem;
+}
+
+h1 {
+  font-size: 2.8rem;
 }
 
 h2 {
-  align-self: center;
+  font-size: 2.4rem;
+}
+
+p,
+a,
+li,
+button,
+input {
+  font-size: 1.8rem;
 }

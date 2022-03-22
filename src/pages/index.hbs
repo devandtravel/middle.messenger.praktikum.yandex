@@ -1,15 +1,23 @@
 ---
+navLinks:
+  - href: ./chats.hbs
+    text: Chats
+  - href: ./profile.hbs
+    text: Profile
+  - href: ./authorization.hbs
+    text: Authorization
+  - href: ./registration.hbs
+    text: Registration
+  - href: ./5xx.hbs
+    text: 5xx
+  - href: ./404.hbs
+    text: 404
 stylesheet:
   - ../styles/base.css
 ---
-
 {{!< base}}
-
-<main>
-  <a href="./5xx.hbs">5xx</a>
-  <a href="./404.hbs">404</a>
-  <a href="./authorization.hbs">Authorization</a>
-  <a href="./chats.hbs">Chats</a>
-  <a href="./profile.hbs">Profile</a>
-  <a href="./registration.hbs">Registration</a>
-</main>
+<nav>
+  <ul class="menu">
+    {{> navLinks}}
+  </ul>
+</nav>

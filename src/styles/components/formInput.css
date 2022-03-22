@@ -1,7 +1,6 @@
 .form__input {
   border: none;
-  border-bottom: 1px solid #3369F3;
-  padding: 2px;
+  border-bottom: 1px solid #3369f3;
 }
 
 .form__input:focus {
