@@ -14,3 +14,5 @@ Supports creating groups, adding and deleting users, search, unread message coun
 https://www.figma.com/file/6Ac5bFtsSu1Yc4teMW40uI/Untitled?node-id=0%3A1
 
 ## Link to pull request
+
+https://github.com/devandtravel/middle.messenger.praktikum.yandex/pull/1
