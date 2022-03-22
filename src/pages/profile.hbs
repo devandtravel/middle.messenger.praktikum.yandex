@@ -1,110 +1,30 @@
 ---
-firstName: first_name
-secondName: second_name
-displayName: display_name
-avatar: avatar
-login: login
-email: email
-phone: phone
-oldPassword: oldPassword
-newPassword: newPassword
+nameInputs:
+  - name: first_name
+    label: First name
+  - name: second_name
+    label: Second name
+  - name: display_name
+    label: Display name
 stylesheet:
   - ../styles/profile.css
 ---
 {{!< base}}
-<main>
-  <div>
-    img src="" alt="User avatar"
-    <input type="file" name={{avatar}} />
-  </div>
-  <h1>
-    User display name
-  </h1>
-  <div>
-    <p>
-      Email
-    </p>
-    <input type="email" name={{email}} />
-    <div></div>
-    <p class="input-validation-result">
-      Enter valid email
-    </p>
-  </div>
-  <div>
-    <p>
-      Login
-    </p>
-    <input type="text" name={{login}} required minlength="4" maxlength="20" />
-    <p class="input-validation-result">
-      Login must be from 4 to 20 characters
-    </p>
-  </div>
-  <div>
-    <p>
-      First name
-    </p>
-    <input type="text" name={{firstName}} />
-  </div>
-  <div>
-    <p>
-      Second Name
-    </p>
-    <input type="text" name={{secondName}} />
-  </div>
-  <div>
-    <p>
-      Display name
-    </p>
-    <input type="text" name={{displayName}} />
-  </div>
-  <div>
-    <p>
-      Phone
-    </p>
-    <input type="tel" name={{phone}} />
-  </div>
-  <button>
+<form>
+  {{> avatar}}
+  <h2>
+    User
+  </h2>
+  {{> emailInput}}
+  {{> loginInput}}
+  {{> nameInputs}}
+  {{> phoneInput}}
+  <a href="./changeData.hbs">
     Change data
-  </button>
-  <button>
+  </a>
+  <a href="./changePassword.hbs">
     Change password
-  </button>
-  <label for={{oldPassword}}>
-    Old password
-  </label>
-  <input
-    type="password"
-    name={{oldPassword}}
-    required
-    minlength="8"
-    maxlength="20"
-  />
-  <p class="input-validation-result">
-    Wrong password
-  </p>
-  <label for={{newPassword}}>
-    New password
-  </label>
-  <input
-    type="password"
-    name={{newPassword}}
-    required
-    minlength="8"
-    maxlength="20"
-  />
-  <label for={{newPassword}}Repeat>
-    Repeat new password
-  </label>
-  <input
-    type="password"
-    name={{newPassword}}Repeat
-    required
-    minlength="8"
-    maxlength="20"
-  />
-  <p class="input-validation-result">
-    The passwords don't match
-  </p>
+  </a>
   <button>
     Sign out
   </button>
@@ -114,4 +34,4 @@ stylesheet:
   <button>
     Cancel
   </button>
-</main>
+</form>

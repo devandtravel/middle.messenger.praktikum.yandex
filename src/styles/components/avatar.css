@@ -1,0 +1,6 @@
+.avatar {
+  border-radius: 50%;
+  height: 10rem;
+  background: url(../../images/avatar.png) center center no-repeat;
+  background-size: contain;
+}
