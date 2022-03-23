@@ -1,0 +1,44 @@
+---
+inputs:
+  - label: Email
+    name: email
+    type: email
+  - label: Login
+    name: login
+    type: text
+  - name: first_name
+    label: First name
+    type: text
+  - name: second_name
+    label: Second name
+    type: text
+  - name: display_name
+    label: Display name
+    type: text
+  - label: Phone
+    name: phone
+    type: tel
+buttons:
+  - text: Sign out
+stylesheet:
+  - ../styles/profile.css
+---
+{{!< base}}
+<form>
+  {{> avatar}}
+  <h2>
+    User
+  </h2>
+  {{#each inputs}}
+    {{> input}}
+  {{/each}}
+  <a href="./changeData.hbs">
+    Change data
+  </a>
+  <a href="./changePassword.hbs">
+    Change password
+  </a>
+  {{#each buttons}}
+    {{> button}}
+  {{/each}}
+</form>
