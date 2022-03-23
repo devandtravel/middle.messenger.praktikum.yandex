@@ -7,7 +7,7 @@
     "clear": "rm -rf ./dist/",
     "start": "npm run build && node ./server.js",
     "build": "npm run clear && parcel build ./src/pages/*.hbs --no-cache --public-url ./",
-    "dev": "npm run clear && parcel ./src/pages/*.hbs --no-cache --open"
+    "dev": "npm run clear && parcel ./src/pages/*.hbs --no-cache --open -p 3000"
   },
   "repository": {
     "type": "git",
@@ -27,10 +27,11 @@
   },
   "devDependencies": {
     "@anikin/parcel-transformer-handlebars": "1.0.9",
+    "@parcel/config-default": "2.4.0",
     "autoprefixer": "10.4.4",
     "dotenv": "16.0.0",
     "express": "4.17.3",
-    "parcel": "2.3.2",
+    "parcel": "2.4.0",
     "postcss": "8.4.12",
     "postcss-import": "14.0.2",
     "postcss-modules": "4.3.1",
