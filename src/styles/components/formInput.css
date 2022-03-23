@@ -1,8 +1,0 @@
-.form__input {
-  border: none;
-  border-bottom: 1px solid #3369f3;
-}
-
-.form__input:focus {
-  outline: none;
-}
