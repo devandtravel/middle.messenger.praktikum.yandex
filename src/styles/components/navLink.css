@@ -1,0 +1,25 @@
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #1e1e1e;
+}
+
+.menu__link {
+  float: left;
+}
+
+.menu__link:hover {
+  background-color: #0b7dda;
+}
+
+.menu__link .menu__link_ref {
+  color: white;
+  text-align: center;
+  padding: 1.3rem 1.6rem;
+  text-decoration: none;
+}

@@ -1,0 +1,16 @@
+.form__button {
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 1.4rem 2.8rem;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.form__button_default {
+  background-color: #3369f3;
+}
+
+.form__button_default:hover {
+  background-color: #0b7dda;
+}
