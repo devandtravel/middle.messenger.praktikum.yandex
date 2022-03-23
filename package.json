@@ -4,10 +4,10 @@
   "description": "communication app",
   "source": "index.hbs",
   "scripts": {
-    "clean": "rm -rf ./dist/",
+    "clear": "rm -rf ./dist/",
     "start": "npm run build && node ./server.js",
-    "build": "parcel build ./src/pages/*.hbs --no-cache --public-url ./",
-    "dev": "npm run clean && parcel ./src/pages/*.hbs --no-cache --open"
+    "build": "npm run clear && parcel build ./src/pages/*.hbs --no-cache --public-url ./",
+    "dev": "npm run clear && parcel ./src/pages/*.hbs --no-cache --open"
   },
   "repository": {
     "type": "git",
