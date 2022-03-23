@@ -1,81 +1,36 @@
 ---
 message: message
 stylesheet:
-  - ../styles/chats.css
+- ../styles/chats.css
 ---
-{{!< base}}
-<aside>
+{{!< base}} <aside>
   <input type="search" name="search" placeholder="Поиск" />
   <a href="./profile.hbs">
     Profile >
   </a>
-  <div class="chat-peview">
-    <hr />
-    <div>
+  {{> chatPreview}}
+  </aside>
+  <main>
+    <header>
       {{> avatar}}
-      <div>
-        <h3 class="chat-title">
-          chat.title
-        </h3>
-        <span class="date">
-          date
-        </span>
-      </div>
-      <div>
-        <span>
-          You:
-        </span>
-        <p class="chat-peview-text">
-          chat.previewText
-        </p>
-        <p class="chat-message-counter">
-          chat.messageCounter
-        </p>
-      </div>
-    </div>
-  </div>
-</aside>
-<main>
-  <header>
-    {{> avatar}}
-    <h3>
-      User
-    </h3>
-    <button class="chat-menu-button">
-      ::
-    </button>
-  </header>
-  <article class="chat-content">
-    <p class="feed-date">
-      22.03.2022
-    </p>
-    <div class="message">
-      <p class="message-text"></p>
-      <p class="message-text-date">
-        11:00
+      <h3>
+        User
+      </h3>
+      <button class="chat-menu-button">
+        ::
+      </button>
+    </header>
+    <article class="chat-content">
+      <p class="feed-date">
+        22.03.2022
       </p>
-      <div class="message-media">
-        Message media
-      </div>
-    </div>
-    <div class="message my">
-      <div class="message-text"></div>
-      <div class="message-text-date">
-        11:11
-      </div>
-      <div class="message-media my">
-        My message media
-      </div>
-      <div class="message-status">
-        ✓
-      </div>
-    </div>
-  </article>
-  <footer>
+      {{> message}}
+    </article>
+    <footer>
       <button class="append-media">
         Append media
       </button>
       <input type="text" name={{message}} placeholder="Message" />
       <input type="submit" value="Send" />
-  </footer>
-</main>
+    </footer>
+  </main>

@@ -18,6 +18,8 @@ stylesheet:
 {{!< base}}
 <nav>
   <ul class="menu">
-    {{> navLinks}}
+    {{#each navLinks}}
+      {{> navLink}}
+    {{/each}}
   </ul>
 </nav>

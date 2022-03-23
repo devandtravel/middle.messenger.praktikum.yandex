@@ -1,12 +1,24 @@
 ---
-nameInputs:
+inputs:
+  - label: Email
+    name: email
+    type: email
+  - label: Login
+    name: login
+    type: text
   - name: first_name
     label: First name
+    type: text
   - name: second_name
     label: Second name
+    type: text
   - name: display_name
     label: Display name
-buttonTexts:
+    type: text
+  - label: Phone
+    name: phone
+    type: tel
+buttons:
   - text: Sign out
 stylesheet:
   - ../styles/profile.css
@@ -17,15 +29,16 @@ stylesheet:
   <h2>
     User
   </h2>
-  {{> emailInput}}
-  {{> loginInput}}
-  {{> nameInputs}}
-  {{> phoneInput}}
+  {{#each inputs}}
+    {{> input}}
+  {{/each}}
   <a href="./changeData.hbs">
     Change data
   </a>
   <a href="./changePassword.hbs">
     Change password
   </a>
-  {{> formButtons}}
+  {{#each buttons}}
+    {{> button}}
+  {{/each}}
 </form>

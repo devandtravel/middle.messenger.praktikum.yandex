@@ -1,15 +1,30 @@
 ---
-passwordInputs:
-  - label: Password
-    name: password
-  - label: Password (one more time)
-    name: password
-nameInputs:
+inputs:
+  - label: Email
+    name: email
+    type: email
+  - label: Login
+    name: login
+    type: text
   - name: first_name
     label: First name
+    type: text
   - name: second_name
     label: Second name
-buttonTexts:
+    type: text
+  - name: display_name
+    label: Display name
+    type: text
+  - label: Phone
+    name: phone
+    type: tel
+  - label: Password
+    name: password
+    type: password
+  - label: Password (one more time)
+    name: password
+    type: password
+buttons:
   - text: Sign in
   - text: Sign out
 stylesheet:
@@ -20,10 +35,10 @@ stylesheet:
   Registration
 </h2>
 <form>
-  {{> emailInput}}
-  {{> loginInput}}
-  {{> nameInputs}}
-  {{> phoneInput}}
-  {{> passwordInputs}}
-  {{> formButtons}}
+  {{#each inputs}}
+    {{> input}}
+  {{/each}}
+  {{#each buttons}}
+    {{> button}}
+  {{/each}}
 </form>
