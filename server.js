@@ -13,6 +13,6 @@ app.use(express.static(path.join(__dirname + '/dist')))
 const PORT = env.PORT || DEFAULT_PORT
 
 app.listen(PORT, function () {
-  console.log(`Example app listening on port ${PORT}!`)
+  console.log(`App listening on port ${PORT}!`)
   console.log('env.PORT', env.PORT)
 })

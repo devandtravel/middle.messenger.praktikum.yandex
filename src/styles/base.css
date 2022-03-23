@@ -1,7 +1,7 @@
 @import './components/formButton.css';
 @import './components/formInput.css';
 @import './components/formLabel.css';
-@import './components/navLinks.css';
+@import './components/navLink.css';
 
 html {
   font-size: 62.5%;
