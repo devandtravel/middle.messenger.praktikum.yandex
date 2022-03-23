@@ -6,7 +6,7 @@
   "scripts": {
     "clean": "rm -rf ./dist/",
     "start": "npm run build && node ./server.js",
-    "build": "npm run clean && parcel build ./src/pages/*.hbs --no-cache --public-url ./",
+    "build": "parcel build ./src/pages/*.hbs --no-cache --public-url ./",
     "dev": "npm run clean && parcel ./src/pages/*.hbs --no-cache --open"
   },
   "repository": {
