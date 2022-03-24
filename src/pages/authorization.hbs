@@ -1,0 +1,26 @@
+---
+inputs:
+- label: Login
+  name: login
+  type: text
+- label: Password
+  name: password
+  type: password
+buttons:
+- text: Sign in
+- text: Sign out
+stylesheet:
+- ../styles/form.css
+---
+{{!< base}}
+<h2>
+  Authorization
+</h2>
+<form>
+  {{#each inputs}}
+    {{> input}}
+  {{/each}}
+  {{#each buttons}}
+    {{> button}}
+  {{/each}}
+</form>

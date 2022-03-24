@@ -1,0 +1,36 @@
+---
+message: message
+stylesheet:
+- ../styles/chats.css
+---
+{{!< base}} <aside>
+  <input type="search" name="search" placeholder="Поиск" />
+  <a href="./profile.hbs">
+    Profile >
+  </a>
+  {{> chatPreview}}
+  </aside>
+  <main>
+    <header>
+      {{> avatar}}
+      <h3>
+        User
+      </h3>
+      <button class="chat-menu-button">
+        ::
+      </button>
+    </header>
+    <article class="chat-content">
+      <p class="feed-date">
+        22.03.2022
+      </p>
+      {{> message}}
+    </article>
+    <footer>
+      <button class="append-media">
+        Append media
+      </button>
+      <input type="text" name={{message}} placeholder="Message" />
+      <input type="submit" value="Send" />
+    </footer>
+  </main>
